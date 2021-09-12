@@ -1,7 +1,8 @@
 import React from 'react'
 import './BookList.css'
-const BookList = ({books,add}) => {
+const BookList = ({books,add, addB}) => {
     return (
+        <>{
         books.map((book) =>{
             return(<div className="bookCard">
                 <h4>{book.name}</h4>
@@ -10,7 +11,16 @@ const BookList = ({books,add}) => {
                 <button onClick={() => add(book.id)}>Add to Fav</button>
             </div>
             )
-        })
+        })}
+        {
+            Object.keys(addB).map(function(key, index) {
+                <div>
+                    <p>{addB.name}</p>
+                </div>
+              })
+              
+        }
+        </>
     )
 }
 
