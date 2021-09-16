@@ -1,0 +1,12 @@
+.skeleton__1{
+    text-align: start;
+    padding: 5px;
+}
+.skeleton__Profile__1{
+    display: flex;
+}
+.skeleton__Profile__info__1{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 0px 15px;
+}
