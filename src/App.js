@@ -14,6 +14,8 @@ import {
 } from "react-router-dom";
 import SkeletonExample1 from './components/Skeleton/SkeletonExample1';
 import Skeleton2 from './components/Skeleton/Skeleton2';
+import Skeleton3 from './components/Skeleton/Skeleton3';
+import Skeleton4 from './components/Skeleton/Skeleton4';
 function App() {
   return (
     <Router className="App">
@@ -38,6 +40,12 @@ function App() {
               <Link to="/skeleton3">Skeleton Example 3</Link>
             </li>
             <li>
+              <Link to="/skeleton4">Skeleton Example 4</Link>
+            </li>
+            <li>
+              <Link to="/skeleton5">Skeleton Example 5</Link>
+            </li>
+            <li>
               <Link to="/wishlist">Add to wish cart</Link>
             </li>
           </ul>
@@ -60,6 +68,12 @@ function App() {
           </Route>
           <Route path="/skeleton3">
           <Skeleton2 />
+          </Route>
+          <Route path="/skeleton4">
+          <Skeleton3 />
+          </Route>
+          <Route path="/skeleton5">
+          <Skeleton4 />
           </Route>
         </Switch>
       {/* <AddToFavoriteList  /> */}
