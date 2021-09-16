@@ -1,0 +1,12 @@
+.skeleton{
+    text-align: start;
+    padding: 5px;
+}
+.skeleton__Profile{
+    display: flex;
+}
+.skeleton__Profile__info{
+    display: grid;
+    grid-template-columns: min-content;
+    align-items: center;
+}
