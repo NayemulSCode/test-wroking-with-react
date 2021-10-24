@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css';
 import AddToFavoriteList from './components/AddToFavoriteList';
 import AddToSaveList from './components/AddToBook/AddToSaveList';
@@ -16,6 +17,10 @@ import SkeletonExample1 from './components/Skeleton/SkeletonExample1';
 import Skeleton2 from './components/Skeleton/Skeleton2';
 import Skeleton3 from './components/Skeleton/Skeleton3';
 import Skeleton4 from './components/Skeleton/Skeleton4';
+import TogglePassword from './components/ShowPassword/TogglePassword';
+import DateTime from './components/DateTime/DateTime';
+import Emoji from './components/EmojiPicker/Emoji';
+import BootstrapModalCustom from './components/Modal/BootstrapModalCustom';
 function App() {
   return (
     <Router className="App">
@@ -48,6 +53,18 @@ function App() {
             <li>
               <Link to="/wishlist">Add to wish cart</Link>
             </li>
+            <li>
+              <Link to="/toggle-password">toggle password</Link>
+            </li>
+            <li>
+              <Link to="/date-time">Date Time</Link>
+            </li>
+            <li>
+              <Link to="/emoji">emoji picker</Link>
+            </li>
+            <li>
+              <Link to="/bootstrap-modal">bootstrap modal</Link>
+            </li>
           </ul>
         </nav>
         <Switch>
@@ -61,7 +78,7 @@ function App() {
             <SkeletonExample />
           </Route>
           <Route path="/wishlist">
-          <AddToSaveList />
+          {/* <AddToSaveList /> */}
           </Route>
           <Route path="/skeleton2">
           <SkeletonExample1 />
@@ -69,11 +86,23 @@ function App() {
           <Route path="/skeleton3">
           <Skeleton2 />
           </Route>
-          <Route path="/skeleton4">
+            <Route path="/skeleton4">
           <Skeleton3 />
           </Route>
-          <Route path="/skeleton5">
+            <Route path="/skeleton5">
           <Skeleton4 />
+          </Route>
+          <Route path="/toggle-password">
+            <TogglePassword />
+          </Route>
+          <Route path="/date-time">
+            <DateTime />
+          </Route>
+          <Route path="/emoji">
+            <Emoji />
+          </Route>
+          <Route path="/emoji">
+            <BootstrapModalCustom />
           </Route>
         </Switch>
       {/* <AddToFavoriteList  /> */}

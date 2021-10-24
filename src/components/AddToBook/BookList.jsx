@@ -14,10 +14,10 @@ const BookList = ({books,add, addB}) => {
         })}
         {
             Object.keys(addB).map(function(key, index) {
-                <div>
+                return <div>
                     <p>{addB.name}</p>
                 </div>
-              })
+            })
               
         }
         </>
